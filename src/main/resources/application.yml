@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    active: '@environment@'
+#  mail:
+#    # 163邮箱的地址为smtp.163.com，直接填写即可
+#    host: smtp.qq.com
+#    # 你申请的163邮箱
+#    username: 237448303@qq.com
+#    # 注意密码是在开启smtp/pop3时自动生成的，记得保存一下，不然就找不到了
+#    password: kwgkqahcunphbifb
+    #Aekyvwgznjhdicbde
+  mvc:
+    pathmatch:
+       matching-strategy: ant_path_matcher
+
+  jpa:
+    #开启SQL语句执行日志信息
+    show-sql: true
+    hibernate:
+      #配置为自动创建
+      ddl-auto: update
+      properties:
+        character_set_server: utf8mb4
